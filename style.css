@@ -32,9 +32,6 @@ body, html {
   background-size: cover;
 }
 
-
-
-
 .caption {
   position: absolute;
   left: 0;
@@ -45,7 +42,7 @@ body, html {
 }
 
 .caption span.border {
-  background-color: #034C7C;
+  background-color: #5B667E;
   color: #fff;
   padding: 12.5px;
   font-size: 35px;
@@ -54,7 +51,7 @@ body, html {
 
 .button {
   border-radius: 4px;
-  background-color: #1877B3;
+  background-color: #2E333B;
   border: none;
   color: #FFFFFF;
   font-size: 28px;
@@ -97,4 +94,44 @@ body, html {
 .button:hover span:after {
   opacity: 1;
   right: 0;
+}
+
+
+/* */
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  padding: 64px;
+}
+
+/* Clear floats */
+.row:after {
+  content: "";
+  display: table;
+  clear: both
+}
+
+/* 2/3 column */
+.column-66 {
+  float: left;
+  width: 66.66666%;
+  padding: 20px;
+}
+
+/* 1/3 column */
+.column-33 {
+  float: left;
+  width: 33.33333%;
+  padding: 20px;
+}
+
+/* Add responsiveness - make the columns appear on top of each other instead of next to each other on small screens */
+@media screen and (max-width: 1000px) {
+  .column-66,
+  .column-33 {
+    width: 100%;
+    text-align: center;
+  }
 }
