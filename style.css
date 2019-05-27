@@ -134,10 +134,17 @@ body, html {
     width: 100%;
     text-align: center;
   }
+  .icons{
+    padding-top: 0% !important;
+  }
+  
 }
-
+.icons{
+  padding-top: 10%;
+}
 @media screen and (prefers-reduced-motion: reduce) {
 	html {
 		scroll-behavior: auto;
-	}
+  }
+  
 }
